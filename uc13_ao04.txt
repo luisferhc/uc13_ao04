@@ -1,0 +1,12 @@
+CREATE LOGIN usuario
+WITH PASSWORD = '1234'
+
+CREATE USER usuario FOR LOGIN usuario
+
+GRANT SELECT TO usuario
+
+
+SELECT * FROM Classes
+
+INSERT INTO Personagens
+VALUES ('Novo')
